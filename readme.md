@@ -4,4 +4,6 @@
 
 Encoders is a creatively named PHP library containing various binary-to-text encoding implementations.
 
+I basically wrote a Base 32 implementation for my another project Google Authenticator and thought to myself, hey...why not create an entire library featuring binary-to-text encoders, that's kind of fun? So here it is. A filler project, for fun.
+
 **Project is still under development...slow ride...take it easy...**
