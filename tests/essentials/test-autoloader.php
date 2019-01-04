@@ -36,7 +36,7 @@
      * it isn't tested automatically by Travis CI.
      * 
      * @author    Djordje Jocic <office@djordjejocic.com>
-     * @copyright 2018 All Rights Reserved
+     * @copyright 2019 All Rights Reserved
      * @version   1.0.0
      */
     
@@ -62,7 +62,7 @@
          * Tests the project's autoloading function.
          * 
          * @author    Djordje Jocic <office@djordjejocic.com>
-         * @copyright 2018 All Rights Reserved
+         * @copyright 2019 All Rights Reserved
          * @version   1.0.0
          * 
          * @return void

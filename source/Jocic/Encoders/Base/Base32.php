@@ -29,7 +29,7 @@
     |* OTHER DEALINGS IN THE SOFTWARE.                                 *|
     \*******************************************************************/
     
-    namespace Jocic\GoogleAuthenticator\Encoders\Base;
+    namespace Jocic\Encoders\Base;
     
     /**
      * <i>Base32</i> class is used for encoding data in <i>Base 32</i> format.
