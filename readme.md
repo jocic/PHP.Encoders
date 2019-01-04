@@ -26,7 +26,7 @@ Complete documentation can be found by following the link above.
 
 ## Examples
 
-Using encoders from the library is extremely simple, just in case you are getting started with PHP programming, I've prepared several examples to help you get started. You simply need to instantiate an object of your desired encoder and use the "encode" or "decode" methods respectively.
+Using encoders from the library is extremely simple but, just in case you are getting started with PHP programming language, I've prepared several examples to help you on your journey. You simply need to instantiate an object of your desired encoder and use the "encode" or "decode" methods respectively.
 
 ### Example 1 - Base Encoding & Decoding
 
