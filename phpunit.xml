@@ -3,7 +3,6 @@
         <testsuite name="essentials">
             <file>tests/essentials/test-autoloader.php</file>
         </testsuite>
-        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="false">
