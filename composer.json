@@ -1,0 +1,29 @@
+{
+    "name" : "jocic/encoders",
+    "description" : "Encoders is a creatively named PHP library containing various binary-to-text encoding implementations.",
+    "type" : "library",
+    "license" : "MIT",
+    "authors" : [{
+        "name" : "Đorđe Jocić",
+        "email" : "office@djordjejocic.com"
+    }],
+    "keywords" : [
+        "encoders"
+    ],
+    "config" : {
+        "vendor-dir" : "./dependencies"
+    },
+    "require" : {
+        "php" : ">=7.0"
+    },
+    "require-dev" : {
+        "php" : ">=7.2",
+        "phpunit/phpunit" : "^7.5",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jocic\\" : "source/Jocic/"
+        }
+    }
+}
