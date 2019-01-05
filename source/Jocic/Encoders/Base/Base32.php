@@ -31,7 +31,7 @@
     
     namespace Jocic\Encoders\Base;
     
-    use Jocic\Encoders\EncoderInterface;
+    use Jocic\Encoders\DefaultEncoderInterface;
     
     /**
      * <i>Base32</i> class is used for encoding data in <i>Base 32</i> format.
@@ -41,7 +41,7 @@
      * @version   1.0.0
      */
     
-    class Base32 implements DefaultInterface, BaseInterface
+    class Base32 implements DefaultEncoderInterface, BaseEncoderInterface
     {
         /******************\
         |* CORE CONSTANTS *|
