@@ -12,6 +12,8 @@ Following specifications are referenced:
 
 [![Buy Me Coffee](images/buy-me-coffee.png)](https://www.paypal.me/DjordjeJocic)
 
+**Song of the project:** [Write in C](https://www.youtube.com/watch?v=1S1fISh-pag)
+
 **Project is still under development...slow ride...take it easy...**
 
 ## Versioning Scheme
@@ -72,9 +74,9 @@ bash ./scripts/composer.sh install
 
 Please review the following documents if you are planning to contribute to the project:
 
-*   [Contributor Covenant Code of Conduct](code_of_conduct.md)
+*   [Contributor Covenant Code of Conduct](code-of-conduct.md)
 *   [Contribution Guidelines](contributing.md)
-*   [Pull Request Template](pull_request_template.md)
+*   [Pull Request Template](pull-request-template.md)
 *   [MIT License](license.md)
 
 ## Support
