@@ -32,40 +32,21 @@
     namespace Jocic\Encoders\Base;
     
     /**
-     * <i>BaseInterface</i> is an interface used to enforce implementation of
-     * core base encoder's methods.
+     * <i>DefaultInterface</i> is an interface used to enforce implementation of
+     * core default encoder's methods.
      * 
      * @author    Djordje Jocic <office@djordjejocic.com>
      * @copyright 2019 All Rights Reserved
      * @version   1.0.0
      */
     
-    interface BaseInterface
+    interface DefaultInterface
     {
         /***************\
         |* GET METHODS *|
         \***************/
         
-        /**
-         * Returns an array containing characters of the encoding table.
-         * 
-         * @author    Djordje Jocic <office@djordjejocic.com>
-         * @copyright 2019 All Rights Reserved
-         * @version   1.0.0
-         */
-        
-        public function getBaseTable();
-        
-        /**
-         * Returns a string containing a single character used for
-         * padding-purposes.
-         * 
-         * @author    Djordje Jocic <office@djordjejocic.com>
-         * @copyright 2019 All Rights Reserved
-         * @version   1.0.0
-         */
-        
-        public function getBasePadding();
+        // GET METHODS GO HERE
         
         /***************\
         |* SET METHODS *|
@@ -77,13 +58,48 @@
         |* CORE METHODS *|
         \****************/
         
-        // CORE METHODS GO HERE
+        /**
+         * Encodes a provided string to a desired <i>Base</i> encoding.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @param string $input
+         *   Input string that needs to be encoded.
+         */
+        
+        public function encode($input);
+        
+        /**
+         * Encodes a provided string to a desired <i>Base</i> decoding.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @param string $input
+         *   Input string that needs to be decoding.
+         */
+        
+        public function decode($input);
         
         /*****************\
         |* CHECK METHODS *|
         \*****************/
         
-        // CHECK METHODS GO HERE
+        /**
+         * Checks if a provided encoding is valid or not.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @param string $encoding
+         *   Encoding that needs to be checked.
+         */
+        
+        public function isEncodingValid($encoding);
         
         /*****************\
         |* OTHER METHODS *|
