@@ -8,7 +8,7 @@ I basically wrote a Base 32 implementation for my other project, Google Authenti
 
 Following specifications are referenced:
 
-*   [RFC 4648](documentation/rfc4648.txt) - Base 16, Base 32 & Base 64 Data Encodings
+*   [RFC 4648](other/specifications/rfc4648.txt) - Base 16, Base 32 & Base 64 Data Encodings
 
 [![Buy Me Coffee](images/buy-me-coffee.png)](https://www.paypal.me/DjordjeJocic)
 
