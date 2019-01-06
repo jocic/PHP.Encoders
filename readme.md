@@ -12,7 +12,7 @@ Following specifications are referenced:
 
 [![Buy Me Coffee](images/buy-me-coffee.png)](https://www.paypal.me/DjordjeJocic)
 
-**Song of the project:** [Write in C](https://www.youtube.com/watch?v=1S1fISh-pag)
+**Song of the project:** [Albert Veli - Write in C](https://www.youtube.com/watch?v=1S1fISh-pag)
 
 **Project is still under development...slow ride...take it easy...**
 
@@ -30,7 +30,20 @@ Complete documentation can be found by following the link above.
 
 Using encoders from the library is extremely simple but, just in case you are getting started with PHP programming language, I've prepared several examples to help you on your journey. You simply need to instantiate an object of your desired encoder and use the "encode" or "decode" methods respectively.
 
-### Example 1 - Base Encoding & Decoding
+### Base Encoding & Decoding
+
+Only Base 16 and 32 are currently supported.
+
+## Base 16
+
+```php
+$encoder = new Jocic\Encoders\Base\Base16();
+
+echo $encoder->encode("foo");
+echo $encoder->decode("666F6F");
+```
+
+## Base 32
 
 ```php
 $encoder = new Jocic\Encoders\Base\Base32();
