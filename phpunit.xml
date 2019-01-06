@@ -4,6 +4,7 @@
             <file>tests/essentials/test-autoloader.php</file>
         </testsuite>
         <testsuite name="base">
+            <file>tests/base/test-base-16.php</file>
             <file>tests/base/test-base-32.php</file>
         </testsuite>
     </testsuites>
