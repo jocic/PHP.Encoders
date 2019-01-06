@@ -47,7 +47,54 @@
         |* GET & SET METHODS *|
         \*********************/
         
-        // GET & SET METHODS GO HERE
+        /**
+         * Tests <i>getBaseTableMethod</i> method for the <i>Base 32</i>
+         * implementation.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @return void
+         */
+        
+        public function testGetBaseTableMethod()
+        {
+            // Core Variables
+            
+            $encoder = new Base32();
+            
+            // Logic
+            
+            $this->assertSame([
+                "A", "B", "C", "D", "E", "F", "G", "H", "I",
+                "J", "K", "L", "M", "N", "O", "P", "Q", "R",
+                "S", "T", "U", "V", "W", "X", "Y", "Z", "2",
+                "3", "4", "5", "6", "7"
+            ], $encoder->getBaseTable());
+        }
+        
+        /**
+         * Tests <i>getBasePadding</i> method for the <i>Base 32</i>
+         * implementation.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @return void
+         */
+        
+        public function testGetBasePaddingMethod()
+        {
+            // Core Variables
+            
+            $encoder = new Base32();
+            
+            // Logic
+            
+            $this->assertSame("=", $encoder->getBasePadding());
+        }
         
         /*****************\
         |* CHECK METHODS *|

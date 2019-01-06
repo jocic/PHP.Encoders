@@ -32,9 +32,9 @@ Using encoders from the library is extremely simple but, just in case you are ge
 
 ### Base Encoding & Decoding
 
-Only Base 16 and 32 are currently supported.
+Only Base 16 and Base 32 are currently supported.
 
-## Base 16
+#### Base 16
 
 ```php
 $encoder = new Jocic\Encoders\Base\Base16();
@@ -43,7 +43,7 @@ echo $encoder->encode("foo");
 echo $encoder->decode("666F6F");
 ```
 
-## Base 32
+#### Base 32
 
 ```php
 $encoder = new Jocic\Encoders\Base\Base32();
