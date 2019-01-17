@@ -245,28 +245,9 @@
                 return true;
             }
             
-            // Step 2 - Check General Form
+            // Step 2 - Check Encoding
             
-            if (!preg_match("/^([A-z0-9]+)?$/", $encoding))
-            {
-                return false;
-            }
-            
-            // Step 3 - Generate Character Array
-            
-            $characters = str_split($encoding);
-            
-            // Step 4 - Check Characters
-            
-            foreach ($characters as $character)
-            {
-                if (!in_array($character, $baseTable))
-                {
-                    return false;
-                }
-            }
-            
-            return true;
+            return preg_match("/^([A-F0-7]+)([=]+)?$/", $encoding) == 1;
         }
         
         /********************\
