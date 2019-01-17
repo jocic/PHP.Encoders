@@ -2,7 +2,7 @@
     
     /*******************************************************************\
     |* Author: Djordje Jocic                                           *|
-    |* Year: 2018                                                      *|
+    |* Year: 2019                                                      *|
     |* License: MIT License (MIT)                                      *|
     |* =============================================================== *|
     |* Personal Website: http://www.djordjejocic.com/                  *|
@@ -35,7 +35,7 @@
      * Loads a desired class from the project's source directory.
      * 
      * @author    Djordje Jocic <office@djordjejocic.com>
-     * @copyright 2018 All Rights Reserved
+     * @copyright 2019 All Rights Reserved
      * @version   1.0.0
      * 
      * @param string $class_name
