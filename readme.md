@@ -52,6 +52,15 @@ echo $encoder->encode("foo");
 echo $encoder->decode("MZXW6===");
 ```
 
+#### Base 64
+
+```php
+$encoder = new Jocic\Encoders\Base\Base64();
+
+echo $encoder->encode("foo");
+echo $encoder->decode("Zm9v");
+```
+
 ## Installation
 
 There's two ways you can add **Encoders** library to your project:
@@ -60,7 +69,7 @@ There's two ways you can add **Encoders** library to your project:
 *   Via Composer, by executing the command below
 
 ```bash
-composer require jocic/encoders dev-master
+composer require jocic/encoders 1.0.0
 ```
 
 ## Tests
