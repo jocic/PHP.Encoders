@@ -253,15 +253,6 @@
         
         public function isEncodingValid($encoding)
         {
-            // Core Variables
-            
-            $baseTable   = $this->getBaseTable();
-            $basePadding = $this->getBasePadding();
-            
-            // Other Variables
-            
-            $characters = [];
-            
             // Step 1 - Check If Empty
             
             if ($encoding == "")
