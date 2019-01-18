@@ -54,7 +54,14 @@
         |* CORE VARIABLES *|
         \******************/
         
-        // CORE VARIABLES GO HERE
+        /**
+         * Compiled regex that can be used for validation.
+         * 
+         * @var    string
+         * @access protected
+         */
+        
+        protected $regex = "";
         
         /*******************\
         |* MAGIC FUNCTIONS *|
@@ -66,7 +73,41 @@
         |* GET METHODS *|
         \***************/
         
-        // GET METHODS GO HERE
+        /**
+         * Retruns regex that can be used for validating encoding.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @return string
+         *   Compiled regex that can be used for validation.
+         */
+        
+        public function getValidationRegex()
+        {
+            // Core Variables
+            
+            $baseTable   = $this->getBaseTable();
+            $basePadding = $this->getBasePadding();
+            
+            // Logic
+            
+            if ($this->regex == "")
+            {
+                $this->regex .= "/^([" . str_replace("/", "\/",
+                    implode("", $baseTable)) . "]+)";
+                
+                if ($basePadding != "")
+                {
+                    $this->regex .= "([" . $basePadding . "]+)?";
+                }
+                
+                $this->regex .= "$/";
+            }
+            
+            return $this->regex;
+        }
         
         /***************\
         |* SET METHODS *|
@@ -84,7 +125,39 @@
         |* CHECK METHODS *|
         \*****************/
         
-        // CHECK METHODS GO HERE
+        /**
+         * Checks if the encoding is valid or not.
+         * 
+         * Note: Invalid encodings should be rejected per section <i>3.3</i>
+         * in the <i>RFC 4648</i> specifications.
+         * 
+         * @author    Djordje Jocic <office@djordjejocic.com>
+         * @copyright 2019 All Rights Reserved
+         * @version   1.0.0
+         * 
+         * @param string $encoding
+         *   Encoding that needs to be checked.
+         * @return bool
+         *   Value <i>True</i> if encoding is valid, and vice versa.
+         */
+        
+        public function isEncodingValid($encoding)
+        {
+            // Core Variables
+            
+            $regex = $this->getValidationRegex();
+            
+            // Step 1 - Check If Empty
+            
+            if ($encoding == "")
+            {
+                return true;
+            }
+            
+            // Step 2 - Check Encoding
+            
+            return preg_match($regex, $encoding) == 1;
+        }
         
         /********************\
         |* ENCODING METHODS *|

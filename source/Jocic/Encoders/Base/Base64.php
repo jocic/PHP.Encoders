@@ -235,35 +235,7 @@
         |* CHECK METHODS *|
         \*****************/
         
-        /**
-         * Checks if the <i>Base 64</i> encoding is valid or not.
-         * 
-         * Note: Invalid encodings should be rejected per section <i>3.3</i>
-         * in the <i>RFC 4648</i> specifications.
-         * 
-         * @author    Djordje Jocic <office@djordjejocic.com>
-         * @copyright 2019 All Rights Reserved
-         * @version   1.0.0
-         * 
-         * @param string $encoding
-         *   <i>Base 64</i> encoding that needs to be checked.
-         * @return bool
-         *   Value <i>True</i> if encoding is valid, and vice versa.
-         */
-        
-        public function isEncodingValid($encoding)
-        {
-            // Step 1 - Check If Empty
-            
-            if ($encoding == "")
-            {
-                return true;
-            }
-            
-            // Step 2 - Check Encoding
-            
-            return preg_match("/^([A-z0-9+\/]+)([=]+)?$/", $encoding) == 1;
-        }
+        // CHECK METHODS GO HERE
         
         /********************\
         |* ENCODING METHODS *|
