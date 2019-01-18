@@ -6,6 +6,8 @@ Encoders is a creatively named PHP library containing various binary-to-text enc
 
 I basically wrote a Base 32 implementation for my other project, Google Authenticator which you can find on GitHub, and thought to myself, hey...why not create an entire library featuring binary-to-text encoders, that's kind of fun? So here it is. A filler project, for fun.
 
+![Project Image](images/project-image-small.png)
+
 Following specifications are referenced:
 
 *   [RFC 4648](other/specifications/rfc4648.txt) - Base 16, Base 32 & Base 64 Data Encodings
@@ -13,8 +15,6 @@ Following specifications are referenced:
 [![Buy Me Coffee](images/buy-me-coffee.png)](https://www.paypal.me/DjordjeJocic)
 
 **Song of the project:** [Albert Veli - Write in C](https://www.youtube.com/watch?v=1S1fISh-pag)
-
-**Project is still under development...slow ride...take it easy...**
 
 ## Versioning Scheme
 
